@@ -324,7 +324,7 @@ Voici un exemple de résultats :
 
 ### 1) Initialiser une application Vue.
 
-- [ ] Commençons par créer une application VueJS, pour cela utilisons l'interface en ligne de commande officielle `vue-cli`.
+- [x] Commençons par créer une application VueJS, pour cela utilisons l'interface en ligne de commande officielle `vue-cli`.
 
 Si ce n'est pas fait, il faut d'abord l'installer avec npm :
 
@@ -334,9 +334,9 @@ npm install --global vue-cli
 
 **Question :** Rappeler ce qu'est npm et pourquoi nous utilisons l'option --global ?
 
-*Votre réponse :*
+*Votre réponse :*npm est un gestionnaire de packages, on l'installe en global pour qu'il soit accessible de partout
 
-- [ ] Créez maintenant l'application :
+- [x] Créez maintenant l'application :
 
 ```
 vue init webpack [NOM_PROJET]
@@ -349,17 +349,17 @@ Des questions vont vous être posées, voici un exemple de choix :
 
 * Quels sont des bons réflexes à avoir quand vous télécharger un nouveau projet ? Quels fichiers regarder ? Avant même de commencer à lancer l'application et sans regarder le code vous pouvez apprendre plein de choses.
 
-*Votre réponse :*
+*Votre réponse :* regarder le readme et le package.json
 
 * Si vous regardez le fichier `README.md` du projet vous voyez que trois commandes sont indiquées, quel est le but de chacune ?
 
-*Votre réponse :*
+*Votre réponse :* npm install (pour installer les packages et dépendances), npm run dev (pour lancer l'application) et npm build(construire le script)
  
 * Lancez le projet.
 
 - [ ] Une fois que tout fonctionne, faites un premier commit ( vous aurez sûrement besoin d'initialiser le repository git ). Quelle est la commande à utiliser ? 🤔
 
-*Votre réponse :*
+*Votre réponse :* git init
 
 
 ### 2) Analyse du contenu du starter.
@@ -394,13 +394,13 @@ C'est à dire qu'un projet respecte ce format :
 }
 ```
 
-- [ ] Changez le contenu du composant `HelloWorld.vue` afin qu'il puisse afficher un projet.
+- [x] Changez le contenu du composant `HelloWorld.vue` afin qu'il puisse afficher un projet.
 
 Voici un exemple de style que cela pourrait avoir :
 
 ![](images/vue-project-comp.png)
 
-- [ ] Renommez le fichier pour qu'il reflète son contenu.
+- [x] Renommez le fichier pour qu'il reflète son contenu.
 
 ##### 2) Changer le style
 
