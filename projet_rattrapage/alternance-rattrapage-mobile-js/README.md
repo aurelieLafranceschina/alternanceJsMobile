@@ -357,7 +357,7 @@ Des questions vont vous être posées, voici un exemple de choix :
  
 * Lancez le projet.
 
-- [ ] Une fois que tout fonctionne, faites un premier commit ( vous aurez sûrement besoin d'initialiser le repository git ). Quelle est la commande à utiliser ? 🤔
+- [x] Une fois que tout fonctionne, faites un premier commit ( vous aurez sûrement besoin d'initialiser le repository git ). Quelle est la commande à utiliser ? 🤔
 
 *Votre réponse :* git init
 
@@ -404,12 +404,12 @@ Voici un exemple de style que cela pourrait avoir :
 
 ##### 2) Changer le style
 
-- [ ] Faites en sorte de changer le style entre un projet actif et un projet non actif, par exemple, la couleur du nom du projet ou la couleur de fond.
+- [x] Faites en sorte de changer le style entre un projet actif et un projet non actif, par exemple, la couleur du nom du projet ou la couleur de fond.
 
 
 ##### 3) Marquer l'état avec une checkbox
 
-- [ ] Plutôt que d'écrire du texte, vous allez marquer l'état actif ou non avec une checkbox, la checkbox doit être fonctionnelle et permettre le changement.
+- [x] Plutôt que d'écrire du texte, vous allez marquer l'état actif ou non avec une checkbox, la checkbox doit être fonctionnelle et permettre le changement.
 
 Voici un [exemple](http://recordit.co/pkAPiKSGsg.) de résultat auquel vous pourriez parvenir.
 
