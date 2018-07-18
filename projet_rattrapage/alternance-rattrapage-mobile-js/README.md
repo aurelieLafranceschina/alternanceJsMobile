@@ -364,7 +364,7 @@ Des questions vont vous être posées, voici un exemple de choix :
 
 ### 2) Analyse du contenu du starter.
 
-- [ ] Prenez le temps d'analyser le contenu du répertoire créé par `vue-cli`, et de comprendre l'utilité des fichiers.
+- [x] Prenez le temps d'analyser le contenu du répertoire créé par `vue-cli`, et de comprendre l'utilité des fichiers.
 
 | Question                      | Réponse           |
 | -------------                 |:-------------:|
@@ -424,14 +424,14 @@ VueJS offre la possibilité de faire des listes très facilement, nous allons le
 
 ##### 1) Sans créer de nouveau composant.
 
-- [ ] Dans le code du composant précédemment créé, faites les modifications pour afficher la liste.
+- [x] Dans le code du composant précédemment créé, faites les modifications pour afficher la liste.
 
 ##### 2) En créant un nouveau composant.
 
-- [ ] On souhaite séparer le composant affichant la liste, `ProjectsList`, de celui affichant un élément de la liste, `Project` ( c'est extrêmement classique ), ce qui nous permettra de réutiliser le composant `Project` indépendamment.
+- [x] On souhaite séparer le composant affichant la liste, `ProjectsList`, de celui affichant un élément de la liste, `Project` ( c'est extrêmement classique ), ce qui nous permettra de réutiliser le composant `Project` indépendamment.
 
-* Comment passe-t-on de la donnée à un composant enfant ?
-* Quels sont les avantages en procédant ainsi ?
+* Comment passe-t-on de la donnée à un composant enfant ? Grâce aux props
+* Quels sont les avantages en procédant ainsi ? Un composant peut réutiliser les données présentes dans un autre composant. 
 
 Ressources : 
   * https://vuejs.org/v2/guide/components-props.html#ad
