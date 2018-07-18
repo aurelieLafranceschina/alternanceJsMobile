@@ -16,10 +16,11 @@
 
 <script>
 import  ProjectList from "./ProjectList.vue";
+
 export default {
   name: 'Home',
   components:{
-    'ProjectList': ProjectList
+    'ProjectList': ProjectList,    
   },
   data () {
     return {

@@ -1,22 +1,21 @@
 <template>     
       <div>
         {{message}}
-        <ul id="projectList">
-           <li  v-for="project in allProjects" v-bind:key="project._id">
-              <div v-bind:class ="{active : project.isActive}">{{ project.name}}
-                <input  type="checkbox" id="checkbox" v-model="project.isActive" >
-                <label v-if="project.isActive" for="checkbox">{{ checkProject }}</label>
-                <label v-else for="checkbox">{{ uncheckedProject }}</label>
-             </div>
-          </li>
+        <ul id="projectList">                     
+            <Project v-for="project in allProjects" v-bind:key="project._id" :projectUnique="project"
+            ></Project>          
         </ul>
       </div>  
       
 </template>
 
 <script>
+import  Project from "./Project.vue";
 export default {
   name: 'ProjectList',
+   components:{    
+    'Project' : Project,
+  },
   props: ["allProjects" , "message"],
   data () {
     return {      
