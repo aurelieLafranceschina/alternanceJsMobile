@@ -81,8 +81,20 @@ a {
 
 .active {
   background-color : #00cc44;
-  border : solid 1px;
+ 
   
   
 }
+
+table {
+  border : 1px solid black;
+
+  }
+
+  td {
+    background-color : #E6E6E6;
+  }
+
+
+
 </style>

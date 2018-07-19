@@ -2,9 +2,11 @@
     <div>
         <li>
             <div v-bind:class ="{active : projectUnique.isActive}">{{ projectUnique.name}}
+                <td>
                 <input  type="checkbox" id="checkbox" v-model="projectUnique.isActive" >
                 <label v-if="projectUnique.isActive" for="checkbox">{{ checkProject }}</label>
                 <label v-else for="checkbox">{{ uncheckedProject }}</label>
+                </td>
             </div>
         </li>
     </div>
@@ -23,11 +25,3 @@ export default {
   }
 </script>
 
-<style>
-.active {
-  background-color : #00cc44;
-  border : solid 1px;
-  
-  
-}
-</style>

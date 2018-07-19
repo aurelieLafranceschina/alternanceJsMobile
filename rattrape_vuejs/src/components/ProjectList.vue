@@ -1,10 +1,14 @@
 <template>     
-      <div>
-        {{message}}
+      <div class="col-12 tableProject ">
+        <table>
+          <tr></tr>
+          <td>
         <ul id="projectList">                     
             <Project v-for="project in allProjects" v-bind:key="project._id" :projectUnique="project"
             ></Project>          
         </ul>
+        </td>
+        </table>
       </div>  
       
 </template>
@@ -25,12 +29,3 @@ export default {
     }
   }
 </script>
-
-<style>
-.active {
-  background-color : #00cc44;
-  border : solid 1px;
-  
-  
-}
-</style>
