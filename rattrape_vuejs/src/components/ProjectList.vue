@@ -1,16 +1,15 @@
 <template>     
-      <div class="col-12 tableProject ">
+      <div>
         <table>
           <tr></tr>
           <td>
         <ul id="projectList">                     
-            <Project v-for="project in allProjects" v-bind:key="project._id" :projectUnique="project"
+            <Project  v-for="project in allProjects" v-bind:key="project.id" :projectUnique="project"
             ></Project>          
         </ul>
         </td>
         </table>
-      </div>  
-      
+      </div>
 </template>
 
 <script>
@@ -25,7 +24,8 @@ export default {
     return {      
       checkProject: 'Actif',
       uncheckedProject: 'Inactif',
+      callOneProject : false
         }
-    }
+      },
   }
 </script>

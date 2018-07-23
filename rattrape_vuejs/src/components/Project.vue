@@ -1,18 +1,24 @@
 <template>    
     <div>
         <li>
-            <div v-bind:class ="{active : projectUnique.isActive}">{{ projectUnique.name}}
-                <td>
-                <input  type="checkbox" id="checkbox" v-model="projectUnique.isActive" >
-                <label v-if="projectUnique.isActive" for="checkbox">{{ checkProject }}</label>
-                <label v-else for="checkbox">{{ uncheckedProject }}</label>
+           <th>{{ projectUnique.name}}</th>
+           <tr>{{projectUnique.creator.picture}}</tr>
+           <tr>{{projectUnique.creator.name}}</tr>
+           <tr>{{projectUnique.description}}</tr>
+                <td >
+                <input  type="checkbox" id="checkbox" >
+                <label v-if=checked for="checkbox">{{ checkProject }}</label>
+                <label  v-else for="checkbox">{{ uncheckedProject }}</label>
+                <router-link to="/projectDetails">Select this project</router-link>
                 </td>
-            </div>
+            
         </li>
-    </div>
+        </div>
+    
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'Project',
   props: ["projectUnique" , "message"],
@@ -21,7 +27,14 @@ export default {
       checkProject: 'Actif',
       uncheckedProject: 'Inactif',
         }
-    }
-  }
+
+  },
+
+    methods:{ }
+
+ }
+  
+   
+  
 </script>
 
