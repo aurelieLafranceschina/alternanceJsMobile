@@ -2,16 +2,15 @@
     <div>
         <li>
            <th>{{ projectUnique.name}}</th>
-           <tr>{{projectUnique.creator.picture}}</tr>
+           <tr><img :src="projectUnique.creator.picture"></tr>
            <tr>{{projectUnique.creator.name}}</tr>
            <tr>{{projectUnique.description}}</tr>
                 <td >
                 <input  type="checkbox" id="checkbox" >
-                <label v-if=checked for="checkbox">{{ checkProject }}</label>
+                <label v-if="checked" for="checkbox">{{ checkProject }}</label>
                 <label  v-else for="checkbox">{{ uncheckedProject }}</label>
-                <router-link to="/projectDetails">Select this project</router-link>
+                <router-link :to="{name: 'ProjectDetails', params: {id: projectUnique.id , projectUnique:projectUnique}}">Select this project</router-link>
                 </td>
-            
         </li>
         </div>
     
@@ -23,14 +22,15 @@ export default {
   name: 'Project',
   props: ["projectUnique" , "message"],
   data () {
-    return {      
+    return {   
+      checked: true , 
       checkProject: 'Actif',
       uncheckedProject: 'Inactif',
         }
 
   },
 
-    methods:{ }
+   
 
  }
   

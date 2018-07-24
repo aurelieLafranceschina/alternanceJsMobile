@@ -25,6 +25,7 @@ export default {
   components:{
     'ProjectList': ProjectList,   
     'ProjectDetails': ProjectDetails, 
+    
      },
 
     created() {
@@ -62,11 +63,7 @@ export default {
 
     },
 
-     methods() {
-
      
-
-     },
 
 
   

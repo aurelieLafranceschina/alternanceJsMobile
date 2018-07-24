@@ -26,9 +26,10 @@ export default new Router({
     },
 
     {
-      path: 'projectDetails/{{_id}}',
+      path: '/projectDetails/:id',
       name: 'ProjectDetails',
-      component: ProjectDetails
+      component: Project,
+      props: true
     }
   ]
 })
