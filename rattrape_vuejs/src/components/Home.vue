@@ -7,6 +7,7 @@
         <input type="checkbox" id="checkbox" v-model="checked" >
         <label for="checkbox">{{ checkProject }}</label>
       </div> -->
+      
     <ProjectList :allProjects="projectList" 
              :message="msg">
     </ProjectList>
@@ -19,12 +20,15 @@
 import axios from 'axios';
 import  ProjectList from "./ProjectList.vue";
 import  ProjectDetails from "./ProjectDetails.vue"
+import  Login from "./Login.vue"
+
 
 export default {
   name: 'Home',
   components:{
     'ProjectList': ProjectList,   
     'ProjectDetails': ProjectDetails, 
+    'Login': Login,
     
      },
 
@@ -45,21 +49,7 @@ export default {
         this.errors.push(e)
       });
 
-
-    //  const promesse = axios.get(`https://daily-standup-campus.herokuapp.com/api/projects?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViMjNmODIzYTM5YjlmMDAxNGViNGJlNiIsImlhdCI6MTUzMTE0Mjg1MX0.K5e_nO1kl0sOOK8rvjYTiRkHPk2vBoGcSGY0Xh3zVQg`)
-     
-    //  promesse.then(data => {
-    //     this.projectList = data.data;
-    //  })
-
-    //   const p = new Promise((resolve, reject) => {
-    //     setTimeout(function() {
-    //       reject("toto");
-    //     }, 1000)
-    //     resolve("titi")
-    //   })
-
-    //   p.then(res => console.log(res)).catch((err) => alert(err));
+    
 
     },
 
@@ -104,6 +94,7 @@ export default {
 
       errors : null,
       loading : false,
+      logIn: "ok",
       
     }
   }

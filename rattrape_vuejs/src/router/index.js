@@ -4,13 +4,20 @@ import Home from '@/components/Home'
 import ProjectList from '@/components/ProjectList'
 import Project from '@/components/Project'
 import ProjectDetails from '@/components/ProjectDetails'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
     {
       path: '/',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/home',
       name: 'Home',
       component: Home
     },
@@ -28,7 +35,7 @@ export default new Router({
     {
       path: '/projectDetails/:id',
       name: 'ProjectDetails',
-      component: Project,
+      component: ProjectDetails,
       props: true
     }
   ]
